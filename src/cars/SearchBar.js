@@ -3,19 +3,18 @@ import React, { useState } from "react";
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
-  const handleSearch = () => {
-    onSearch(query);
-  };
-
   return (
-    <div className="search-bar">
+    <div className="d-flex justify-content-center my-4">
       <input
         type="text"
-        placeholder="Enter location..."
+        className="form-control w-50 me-2"
+        placeholder="Search by location..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className="btn btn-success" onClick={() => onSearch(query)}>
+        Search
+      </button>
     </div>
   );
 };
