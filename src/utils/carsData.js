@@ -42,5 +42,4 @@ const carsData = [
     image: "https://th.bing.com/th/id/OIP.5aFdBi-Dv2h_ssANW7cprQHaE8?rs=1&pid=ImgDetMain",
   },
 ];
-
 export default carsData;
